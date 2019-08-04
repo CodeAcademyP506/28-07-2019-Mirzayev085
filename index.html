@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <canvas style="position:fixed; top:0;left:0; z-index: -1;" width="800" height="600" id="musicPlayer"></canvas>
+    <div id="playerim">
+        <div class="musicPlace">
+            <div class="poster"><img id="thumb" src="Posters/Poster1.jpg"></div>
+            <span id="musicName"></span>
+        </div>
+        <div id="times">
+            <input id="musicTime" type="range">
+            <div class="time">
+                <span id="startTime">00:00</span>
+                <span id="endTime">00:00</span>
+            </div>
+        </div>
+        <div id="controls">
+            <button class="btn" id="prev"><img src="backward-button.png" id="backward" class="cont"></i></button>
+            <button onclick="playAndPause()" class="btn" id="playpause"><img src="play-button.png" id="play" class="cont"></i><img src="pause-button.png" id="pause"
+                    class="cont"></i></button>
+            <button class="btn" id="next"><img src="forward-button.png" id="forward" class="cont"></i></button>
+        </div>
+        <div class="ses">
+       <img id="ses" src="speaker.png" width="15" height="15"> <input id="volumeCont" type="range">
+    </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
